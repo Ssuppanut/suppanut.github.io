@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework3</title>
+    <style>
+        body{
+            background-color: #f0f2f5;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        .Container{
+            display: flex;
+            margin: 0 10%;
+            padding: 16vh 8vh;
+            height: 70vh;
+        }
+        .Box_L{
+            width: 50%;
+            height: 75vh;
+            margin-right:10% ;
+            padding-top: 10vh;
+        }
+        p{
+            margin: 0 0 0 30px;
+            font-size: 1.5em;
+        }
+        .Box_R{
+            width: 400px;
+            height: 75vh;
+            flex-grow: 1;
+            align-content: center;
+        }
+        .Form{
+            align-content: center;
+            width: 90%;
+            height: 50vh;
+            background-color: white;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 1px 4px 8px silver;
+        }
+        input{
+            width:95%;
+            padding: 14px 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border:1px solid rgb(208, 208, 208);
+            border-radius: 8px;
+            font-size: 1em;
+            background-color: white;
+        }
+        Button[type=submit]{
+            width: 100%;
+            padding: 14px;
+            margin: 10px auto;
+            border: none ;
+            border-radius: 8px;
+            font-size: 1.5em;
+            color: rgb(252, 254, 255);
+            background-color: rgb(8, 133, 235);
+        }
+        Button[type=submit]:hover{
+            background-color: rgb(0, 93, 168);
+        }
+        .Fg{
+            text-align: center;
+            padding: 14px;
+        }
+        .Create{
+            width:200px;
+            background-color: rgb(19, 169, 13);
+            padding: 14px;
+            border:none ;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            color: azure;
+            font-size: 1em;
+        }
+        .Create:hover{
+            background-color: rgb(5, 130, 1);
+        }
+        .Cp{
+            text-align: center;
+            margin: 10px;
+            padding-top: 4vh;
+        }
+        .Footer{
+            background-color: white;
+            padding: 5vh 10vw;
+        }
+        .Language{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .Service{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        li {
+            color: rgb(96, 96, 96);
+            margin: 4px 10px;
+            font-size: 0.8em;
+        }
+        input:focus {
+            color: rgb(213, 213, 213);
+            border-color:#1b74c4;
+        }
+        @media (max-width: 900px){
+        .Container{
+            display: flex;
+            margin: 0 ;
+            padding: 8vh 4vh;
+            height: 70vh;
+        }    
+        }
+
+        @media (max-width: 600px){
+        .Container{
+            height: 100vh;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            padding: 10%;
+            margin: 0;
+        }
+        .Box_L{
+            width: 100%;
+            height: 75vh;
+            margin: 0 ;
+            padding: 0;
+            text-align: center;
+        }
+        p{
+            margin: 0 ;
+        }
+        .Box_R{
+            width: 80%;
+            height: 75vh;
+            flex-grow: 1;
+            align-content: center;
+            margin: 0 auto;
+        }
+       
+        }
+    </style>
+</head>
+<body>
+<div class="Container">
+    <div class="Box_L">
+        <img style="height: 120px; width: auto;" class="fb_logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+        <p>Facebook helps you connect and share with the people in your life</p>
+    </div>
+
+    <div class="Box_R">
+        <div class="Form">
+            <input type="text" class="fill_email" placeholder="Email address or phone number" aria-label="Email address or phone number">
+            <input type="password" class="fill_pass" placeholder="Password" aria-label="Password">
+            <button class="btn_login" type="submit"><b>Log in</b></button>
+            <div class="Fg">
+                <a href="#" style="text-decoration:none; color: rgb(0, 110, 255);">Forgotten password?</a>
+            </div>   
+            <div style="border: 1px solid rgb(232, 232, 232);" class="L"> </div>
+            <button class="Create"><b>Create New Account</b></button>
+        </div>
+        <div class="Cp">
+            <a href="#" style="text-decoration:none;color: black;"><b>Create a Page</b></a> for a celebrity, brand or business.
+        </div>
+    </div>
+</div>
+<div class="Footer">
+    <div class="footerinfo">
+        <ul class="Language">
+            <li>English(UK)</li>
+            <li>ภาษาไทย</li>
+            <li>日本語</li>
+            <li>中文(简体)</li>
+            <li>Tiếng Việt</li>
+            <li>Français(France)</li>
+            <li>Deutsch</li>
+            <li>Русский</li>
+            <li>Español</li>
+            <li>Português(Brasil)</li>
+            <li>Italiano</li>
+        </ul>
+        <div style="border: 1px solid rgb(232, 232, 232);" class="L"> </div>
+        <ul class="Service">
+            <li>Log in</li>
+            <li>Messenger</li>
+            <li>Facebook Lite</li>
+            <li>Watch</li>
+            <li>Places</li>
+            <li>Games</li>
+            <li>Market place</li>
+            <li>Meta Pay</li>
+            <li>Oculus</li>
+            <li>Portal</li>
+            <li>Instagram</li>
+            <li>Bulletin</li>
+            <li>Fundraisers</li>
+            <li>Services</li>
+            <li>Voting Information Centre</li>
+            <li>Privacy Policy</li>
+            <li>Privacy Centre</li>
+            <li>Groups</li>
+            <li>About</li>
+            <li>Create ad</li>
+            <li>Create Page</li>
+            <li>Developers</li>
+            <li>Careers</li>
+            <li>Cookies</li>
+            <li>AdChoices</li>
+            <li>Terms</li>
+            <li>Help</li>
+            <li>Contact uploading and non-users</li>
+            <li>Sign Up</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <style>
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {opacity: 1;}
+    </style>
+  </head>
+
+  <body style="font-family: sans-serif;">
+    <div class="row1">
+      <div class="form" style="display:inline-block; width: 200px;">
+        <form action="#">
+          <label for="flying-from" style="line-height: 1.5em"><b>Flying from</b></label>
+          <br>
+          <select id="from" name="from" style="width: 190px; padding: 4px; color: rgb(125, 125, 125);">
+            <option value="Karachi, Pakist" selected>
+              Karachi, Pakist
+            </option>
+            <option value="Karachi2">Karachi2</option>
+            <option value="Karachi3">Karachi3</option>
+            <option value="Karachi4">Karachi4</option>
+          </select>
+        </form>
+      </div>
+
+      <div class="to" style="display:inline-block; width: 200px;">
+        <form action="#">
+          <label for="flying-to" style="line-height: 1.5em"><b>To</b></label>
+          <br>
+          <select id="flying-to" name="flying-to" style="width: 190px; padding: 4px; color: rgb(125, 125, 125);">
+            <option value="Islamabad, Pal" selected>
+              Islamabad, Pal
+            </option>
+            <option value="Islamabad2"> Islamabad2</option>
+            <option value="Islamabad3"> Islamabad3</option>
+            <option value="Islamabad4"> Islamabad4</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <br>
+
+    <div class="row2">
+      <div class="depart" style="display:inline-block; width: 200px;">
+        <form action="#">
+          <label for="departing" style="line-height: 1.5em"><b>Departing</b></label>
+          <br>
+          <input type="date" name="departing" id="departing" style="width: 180px; padding: 4px; color: rgb(125, 125, 125); "/>
+        </form>
+      </div>
+      <div class="return" style="display:inline-block; width: 200px;">
+        <form action="#">
+          <label for="returning" style="line-height: 1.5em"><b>Returning</b> </label>
+          <br>
+          <input type="date" name="returning" id="returning" style="width: 180px; padding: 4px; color: rgb(125, 125, 125);"/>
+        </form>
+      </div>
+    </div>
+    <br>
+
+    <div class="row3">
+      <div class="Adult" style="display:inline-block; width: 100px;">
+        <form action="#">
+          <label for="Adult" style="line-height: 1.5em"><b>Adult</b></label>
+          <br>
+          <input type="number" id="adult" name="adult" min="0"  max="10" value="1" style="width: 80px; padding: 4px; color: rgb(125, 125, 125);"/>
+        </form>
+      </div>
+      <div class="Child" style="display:inline-block; width: 100px;">
+        <form action="#">
+          <label for="child" style="line-height: 1.5em"><b>Child</b></label>
+          <br />
+          <input type="number" id="child" name="child" min="0" max="100" value="0" style="width: 80px; padding: 4px; color: rgb(125, 125, 125);"/>
+        </form>
+      </div>
+      <div class="Infant" style="display:inline-block; width: 100px;">
+        <form action="">
+          <label for="infant" style="line-height: 1.5em"> <b>Infant</b> </label>
+          <br>
+          <input type="number" id="infant" name="infant" min="0" max="100" value="0" style="width: 80px; padding: 4px; color: rgb(125, 125, 125);"/>
+        </form>
+      </div>
+      <div class="Currency" style="display:inline-block; width: 100px; ">
+        <form action="#">
+          <label for="Currency" style="line-height: 1.5em; color: rgb(228, 61, 0)">
+            <b>Currency</b>
+          </label>
+          <br>
+          <select id="currency" name="currency" style="width: 80px; padding: 4px; color: rgb(125, 125, 125);" >
+            <option value="PKR" selected>PKR</option>
+            <option value="PKR2">PKR2</option>
+            <option value="PKR3">PKR3</option>
+            <option value="PKR4">PKR4</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="containter-four-col">
+        <form action="">
+          <input
+            type="submit"
+            value="SEARCH"
+            style="
+              width: 100px;
+              height: 30px;
+              font-weight: bold;
+              color: white;
+              background-image: linear-gradient(rgb(255, 94, 0), rgb(195, 78, 0));
+              border: 1px solid brown;
+              border-radius: 3px;
+            "
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
