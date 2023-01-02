@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: white;
+            display: flex;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            list-style: none;
+        }
+        li {
+            padding: 0 10px 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: brown;
+            text-decoration: solid;
+        }
+        .Hero_banner{
+            background-image: url("https://picsum.photos/id/973/900") ;
+            background-color: black;
+            background-position: center;
+            background-size: cover;
+            height: 80vh;
+            color: white;
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0);
+            border: white solid 1px;
+            color: white;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+        .btn{
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0);
+            border: rgb(0, 0, 0) solid 1px;
+            color: rgb(0, 0, 0);
+        }
+        .btn:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        .container{
+            display: flex;
+            margin: 20px;
+        }
+        .container2{
+            display: flex;
+            background-color: rgb(31, 31, 31);
+        }
+        .Text-card{
+            width: 30%;
+            padding: 40px 0 0 20px;
+        }
+        .card-list { 
+            width: 70%;
+            display: flex;
+            margin: 10px;
+            overflow-x: scroll;
+        }
+        .card{
+            margin: 10px;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px silver;
+        }
+        #card {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .text {
+            text-align: center;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-page" style="padding: 10px;">
+            <a href="#"><img src="./logo-page.png" alt="Logo-page" style="height:2em ;"></a>
+        </div>
+        <ul class="menu">
+            <li class="work"><a href="#">Work</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="3"><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="Hero_banner">
+        <h1 style="padding: 40vh 0 0 0; font-size: 2.5em;">Welcome</h1>
+        <p style="width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, quaerat!</p>
+        <button>Click here!</button>
+    </div>
+    <div class="container">
+        <div class="Text-card">
+            <h1>Card List</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Click here!</button>
+        </div>
+        <div class="card-list">
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/260/200" alt="img">
+            <div class="text">
+              <h3>Title 01</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/259/200" alt="img">
+            <div class="text">
+              <h3>Title 02</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/247/200" alt="img">
+            <div class="text">
+              <h3>Title 03</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/257/200" alt="img">
+            <div class="text">
+              <h3>Title 04</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="card-list">
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/260/200" alt="img">
+            <div class="text">
+              <h3>Title 01</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/259/200" alt="img">
+            <div class="text">
+              <h3>Title 02</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/247/200" alt="img">
+            <div class="text">
+              <h3>Title 03</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="card" src="https://picsum.photos/id/257/200" alt="img">
+            <div class="text">
+              <h3>Title 04</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        </div>
+        <div class="Text-card" style="color: white;">
+            <h1>Card List</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nam error sint!</p>
+            <button>See more</button>
+        </div>
+    </div>
+    <div class="footer">
+        Suppanut Sukuntapuksa.
+    </div>
+</body>
+</html>
